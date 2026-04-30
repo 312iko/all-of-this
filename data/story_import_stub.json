@@ -1,0 +1,155 @@
+{
+  "imported_sections": [
+    {
+      "id": "import_1",
+      "head": "{ATTO 1} Il protagonista [NOME] ha 36 anni e vive a ShinaMihu, una cittadina ind",
+      "text": "{ATTO 1} Il protagonista [NOME] ha 36 anni e vive a ShinaMihu, una cittadina industriale giapponese soffocata da una nebbia quasi permanente, luci al neon sbiadite e quartieri dove sembra sempre notte. Lavora in una fabbrica di componenti LED, con turni massacranti, straordinari non pagati e un contratto precario che potrebbe essere interrotto in qualsiasi momento. Il salario basta appena a coprire l’affitto e le spese mediche di sua madre, suo padre e sua sorella minore, tutti e tre gravemente malati. Da mesi [NOME] è in bilico: dorme poco, mangia male, vive solo per arrivare al giorno dopo. Ha smesso di fare progetti. Ha iniziato a pensare che sparire sarebbe più semplice. # IL GIORNO DOPO Mentre cammina verso la fabbrica, nota una busta infilata tra i cavi di un palo della luce. È stropicciata, senza mittente, ma con un numero scritto a penna in fondo. Dentro c’è un messaggio breve: “Cerchiamo soggetti per un programma sperimentale privato. Retribuzione immediata, elevata. Nessuna indagine preliminare. Nessuna domanda sul passato.” Sotto, un numero da chiamare. [SCELTA: CHIAMA NUMERO, IGNORA] [IGNORA] [NOME] stringe la busta in mano per qualche secondo, poi la getta nel cestino. “Non mi riguarda.” Va avanti verso il lavoro. Ma i giorni peggiorano: il turno si allunga, il corpo cede, la famiglia ha bisogno di soldi che non ha. Una notte, chiuso nel bagno di casa, [NOME] crolla. [FINALE 1: HELPLESS] Si apre la finestra. Per un istante il rumore della città sparisce. Poi anche lui. La famiglia resta senza sostegno. La lettera, ancora piegata nel cestino, era l’ultima possibilità."
+    },
+    {
+      "id": "import_2",
+      "head": "[CHIAMA NUMERO] [NOME] compone il numero con il cuore in gola. Dopo alcuni squil",
+      "text": "[CHIAMA NUMERO] [NOME] compone il numero con il cuore in gola. Dopo alcuni squilli, risponde una voce calma, troppo calma. “Protocollo di accoglienza attivo. Segua le istruzioni. Non faccia domande.” La voce gli dà un indirizzo preciso, in una viuzza stretta dietro un quartiere industriale dismesso."
+    },
+    {
+      "id": "import_3",
+      "head": "section_3",
+      "text": "# L’UFFICIO L’ufficio è nascosto tra due palazzi consumati dall’umidità. Dentro non c’è reception, solo una stanza blu fredda, un monitor acceso e una porta blindata. Una voce artificiale lo accoglie: “Benvenuto, visitatore.” Dopo pochi secondi appare il DOTTORE. Un uomo alto, con camice bianco e maschera chirurgica nera. La maschera non sembra un vezzo teatrale: sembra fatta per nascondere tutto, anche l’identità. Parla con tono misurato, come chi ha già ripetuto quel discorso centinaia di volte. Si presenta come responsabile di un progetto privato di neuro-esposizione. In passato ha lavorato per ambienti criminali e aziende che non compariranno mai nei registri ufficiali. Ora coordina un esperimento non autorizzato, pagato profumatamente da persone disperate, indebitate o facilmente manipolabili. “Non le venderò sogni,” dice. “Le offrirò una possibilità. Se supera il programma, verrà compensato. Se fallisce… almeno saprà di aver tentato.” [NOME] firma. Non perché si fidi. Perché non vede più alternative."
+    },
+    {
+      "id": "import_4",
+      "head": "section_4",
+      "text": "# CAMERA DI TRASFERIMENTO Il Dottore lo accompagna in fondo al corridoio. La porta si chiude dietro di lui con un suono secco. Gli fanno indossare una tuta sottile da test. Poi una capsula cilindrica si apre davanti a lui. Non sembra una bara. Peggio: sembra un dispositivo medico che finge di essere qualcosa di innocuo. [SCELTA: ENTRA, RIFIUTA] [ENTRA] [NOME] entra nella capsula. La porta si chiude. Le luci diventano bianche, poi blu, poi nulla. Il corpo si irrigidisce, la respirazione si spezza, e per un attimo sente di cadere in profondità senza muoversi davvero. Quando apre gli occhi, non è più nella stanza."
+    },
+    {
+      "id": "import_5",
+      "head": "section_5",
+      "text": "# PIANO ASTRALE Si trova su una distesa di prato verde sospesa nel nulla. Il cielo è immobile, troppo perfetto per essere reale. In lontananza, rocce nere e masse di nebbia disegnano un orizzonte impossibile. La voce del Dottore arriva da ogni direzione insieme: “Benvenuto nel piano astrale, [NOME]. Qui la mente non si limita a osservare. Costruisce. Ricorda. Si difende. E, se non regge, collassa.” “Troverà altri soggetti. Alcuni collaboreranno. Altri no. Tutto ciò che decide qui influenzerà la sua possibilità di tornare indietro.” L’aria si increspa. Poi arrivano due figure."
+    },
+    {
+      "id": "import_6",
+      "head": "section_6",
+      "text": "# ARRIVO DEGLI ALTRI SOGGETTI Una ragazza bionda si guarda intorno con il respiro corto. Si chiama EVELYN. È finita nel programma per debiti accumulati con il gioco d’azzardo online e con prestiti impossibili da restituire. Accanto a lei c’è ARTEMIS, un modello che non è mai riuscito a sfondare davvero. Ha perso ogni appiglio economico dopo una truffa contrattuale e una serie di debiti che gli hanno tolto persino la dignità. Entrambi hanno ricevuto la stessa promessa: soldi facili, uscita rapida, nessuna spiegazione. [SCELTA: FAI AMICIZIA, ALLONTANATI] [FAI AMICIZIA] [NOME] si avvicina lentamente. “Rimanere soli qui sembra una pessima idea.” Evelyn abbassa lo sguardo, poi annuisce. “Non so dove siamo, ma non mi piace.” Artemis osserva il prato e le rocce. “Se è un test, allora il punto non è solo sopravvivere. Qualcuno sta misurando come reagiamo.” Da lontano si sente un rumore metallico. I tre decidono di restare insieme. [EFFETTO: + Fiducia Evelyn, + Fiducia Artemis] [ALLONTANATI] [NOME] resta indietro. “Se questo posto è un trucco, stare vicino agli altri può essere un errore.” Si allontana senza dire nulla. Evelyn prova a richiamarlo, ma la sua voce si spegne nella nebbia. [EFFETTO: Modalità isolata attiva]"
+    },
+    {
+      "id": "import_7",
+      "head": "section_7",
+      "text": "# PRIMA AREA: DISTESA Il prato sembra infinito, ma qualcosa non torna. Nessun vento. Nessun insetto. Nessuna ombra davvero coerente. Dopo pochi minuti, [NOME] trova un oggetto luminoso a terra. [OGGETTO: Frammento Luminoso] Non appena lo tocca, una voce distorta sussurra: “Tre luci aprono la via… ma una mente chiusa non vedrà mai il passaggio.” # ENIGMA Devi trovare altri 2 frammenti nella zona. Quando li raccogli tutti: Il terreno vibra. I frammenti si sollevano e si dispongono in un cerchio sospeso. Per un istante, la realtà si sovrappone a un’altra immagine: un corridoio bianco, monitor accesi, cavi, e il DOTTORE senza maschera. Poi tutto si richiude. [OGGETTO OTTENUTO: Frammento di Memoria] Questo frammento riduce l’influenza del Dottore su alcune aree dell’astrale."
+    },
+    {
+      "id": "import_8",
+      "head": "section_8",
+      "text": "# SECONDA AREA: SENTIERO Un passaggio si apre oltre il prato. Il terreno cambia sotto i piedi: roccia nera, crepe luminose, aria più calda e pesante. [SE IN GRUPPO] Evelyn deglutisce. “Ok. Questo è molto peggio.” Artemis si stringe le braccia addosso. “Almeno adesso sembra qualcosa di costruito.” [SE SOLO] Il silenzio è totale. Troppo totale."
+    },
+    {
+      "id": "import_9",
+      "head": "section_9",
+      "text": "# EVENTI DINAMICI Ombre si muovono ai bordi della vista. [SCELTA: OSSERVA, IGNORA] [OSSERVA] [NOME] si ferma e cerca di mettere a fuoco. Tra le ombre appare per un attimo una sagoma umana, come un riflesso fuori fase. [EFFETTO: scopri un indizio] [INDIZIO: il piano astrale reagisce alla paura] [IGNORA] [NOME] continua a camminare. Non succede nulla, ma la sensazione di essere seguito resta. [EFFETTO: tensione +]"
+    },
+    {
+      "id": "import_10",
+      "head": "section_10",
+      "text": "# INCONTRO Una figura emerge dalla nebbia. Ha una forma umana, ma sbagliata: braccia troppo lunghe, passo spezzato, volto indistinto. Non attacca subito. [SCELTA: AFFRONTA, NASCONDITI, COMUNICA] [AFFRONTA] [NOME] reagisce e respinge la creatura in uno scontro rapido. [OGGETTO: Frammento Corrotto] [EFFETTO: Corruzione +] [NASCONDITI] [NOME] si nasconde dietro una parete di roccia. La creatura passa oltre. [SE IN GRUPPO] Evelyn, infastidita, mormora: “Non puoi scappare da tutto.” [EFFETTO: Fiducia Evelyn -] [COMUNICA] [NOME] parla con cautela. La creatura si ferma. “…uscita… falsa…” Poi si dissolve nella nebbia. [EFFETTO: Indizio ottenuto] [INDIZIO: non tutte le uscite sono reali]"
+    },
+    {
+      "id": "import_11",
+      "head": "section_11",
+      "text": "# AVANZAMENTO Il terreno scende verso il basso e si apre davanti a una caverna. Prima che entriate, il Dottore riappare come una proiezione instabile. “State adattandovi più in fretta del previsto.” Pausa. “Questo mi interessa.” Pausa più lunga. “Molto.”"
+    },
+    {
+      "id": "import_12",
+      "head": "section_12",
+      "text": "# FINE ATTO 1 Entrate nella caverna. Buio totale. Per un attimo, tutto si spegne. Quando la luce torna… [NOME] è solo. [TRANSIZIONE: LE RELAZIONI NON SONO SOLO EMOZIONI. QUI SONO ANCORE.]"
+    },
+    {
+      "id": "import_13",
+      "head": "{ATTO 2}",
+      "text": "{ATTO 2} # LA CAVERNA La caverna è stretta, calda e irregolare. Le pareti sembrano pulsare come se respirassero. Ogni tanto si sentono colpi lontani, come se qualcosa si muovesse dietro la roccia. In fondo alla caverna c’è una pietra diversa dalle altre. Avvicinandosi, [NOME] scopre un passaggio nascosto. Scende."
+    },
+    {
+      "id": "import_14",
+      "head": "section_14",
+      "text": "# CORRIDOIO E PORTA BLINDATA Il corridoio porta a una porta blindata con tastierino numerico. Accanto al tastierino, un messaggio inciso nel metallo: “NON CERCARE LA CHIAVE. CERCA LA REGOLA.” [ENIGMA PORTA] La porta è chiusa. Serve un codice. [TENTATIVI LIMITATI] * THE JOURNEY → 2 tentativi * THE JOURNEY… WITHOUT ESCAPE → 1 tentativo [SOLUZIONE] * Normale → orario reale del sistema, senza i due punti. Esempio: 17:49 → 1749 * Without Escape → codifica ASCII del nome del giocatore, senza zeri [SE FALLISCI] Errore. Un suono acuto. Silenzio. Poi un’esplosione improvvisa. [GAME OVER] [SE RIESCI] La porta si apre lentamente. L’aria che esce dall’altra parte è fredda, sterile, quasi clinica."
+    },
+    {
+      "id": "import_15",
+      "head": "section_15",
+      "text": "# NUOVA AREA: ISTITUTO [NOME] entra in una stanza che sembra un reparto psichiatrico abbandonato. Luci fredde. Pareti bianche. Letto con cinghie. Monitor spenti. L’atmosfera è quella di un posto che è stato usato per contenere persone, non per curarle. Su una parete ci sono incisioni fatte a mano: “NON È REALE” “NON FIDARTI DELLE VOCI” “LUI GUARDA” [SE IN GRUPPO] Evelyn si ferma sulla soglia. “Questo posto… è troppo concreto per essere un sogno.” Artemis osserva le pareti. “Qualcuno è stato qui prima di noi. E non ci è arrivato per caso.” [SE SOLO] [NOME] sente qualcosa addosso. La sensazione precisa di essere osservato."
+    },
+    {
+      "id": "import_16",
+      "head": "section_16",
+      "text": "# ESPLORAZIONE Puoi interagire con: * Letto → segni profondi di graffi * Macchinari → uno si accende per un secondo * Pareti → messaggi sempre più confusi Toccando un macchinario: Per un istante si sente una voce reale, filtrata e distante: “…parametri instabili… soggetto non sincronizzato…” [INDIZIO: il piano astrale è collegato a un sistema di monitoraggio reale]"
+    },
+    {
+      "id": "import_17",
+      "head": "section_17",
+      "text": "# ARRIVO DEI CUSTODI La porta si apre bruscamente. Entrano due figure con uniformi ospedaliere scure e volti coperti da visiere opache. Non sembrano medici. Sembrano guardiani. “Cittadini non autorizzati.” “Dovete lasciare immediatamente l’area.” [SCELTA: ACCETTA, RIFIUTA] [ACCETTA] [NOME] alza le mani. I custodi lo scortano fuori senza violenza apparente. Il corridoio sembra infinito. Le luci si spengono una dopo l’altra. Alla fine, una porta si apre. Buio. Quando la luce torna, [NOME] è di nuovo nella fabbrica. Il turno sta per iniziare, come se nulla fosse successo. Ma qualcosa è cambiato. Il confine tra realtà e piano astrale non è più netto. [FINALE 2: RETURN WITHOUT ESCAPE] [RIFIUTA] “Nessuno di voi mi porta da nessuna parte.” I custodi si irrigidiscono. “Decisione non conforme.”"
+    },
+    {
+      "id": "import_18",
+      "head": "section_18",
+      "text": "# SEQUENZA CLICK Sul monitor compaiono cerchi da colpire rapidamente. [REQUISITI] * Normale → 65% precisione * Without Escape → 80% precisione [SE SUPERI] I custodi perdono il controllo per un attimo. La loro postura si spezza, come se un segnale li avesse interrotti. [NOME] ne approfitta per scappare. [SE FALLISCI] Vieni immobilizzato. Le cinghie si chiudono. Urli, ma nessuno risponde."
+    },
+    {
+      "id": "import_19",
+      "head": "section_19",
+      "text": "# BRANCH: CATTURA [NOME] si risveglia su un letto. Legato. Una luce puntata in faccia. Una voce registrata: “Soggetto instabile. Sincronizzazione incompleta. Procedura di contenimento avviata.” Lo schermo diventa nero. Questo branch può portare a futuri finali o scorciatoie narrative."
+    },
+    {
+      "id": "import_20",
+      "head": "section_20",
+      "text": "# DOPO LA FUGA Sei in corsa lungo un corridoio che cambia struttura a ogni passo. Ospedale. Roccia. Metallo. Vuoto. La realtà si rompe a strati. Arrivi in una stanza essenziale, quasi spoglia. Al centro c’è una sedia. Seduto lì… Il DOTTORE. Questa volta non è una proiezione. È presente. In carne e ossa. “Finalmente,” dice."
+    },
+    {
+      "id": "import_21",
+      "head": "section_21",
+      "text": "# FINE ATTO 2 Il Dottore alza lentamente la testa. “Adesso possiamo smettere di fingere.”"
+    },
+    {
+      "id": "import_22",
+      "head": "{ATTO 3}",
+      "text": "{ATTO 3} # VARIANTE A: IL DOTTORE CATTURA IL PROTAGONISTA Se le scelte precedenti hanno aumentato troppo: * la Corruzione * la Fiducia negativa * l’isolamento * il numero di errori nei confronti dei custodi o degli indizi allora il Dottore riesce a catturare [NOME] e, se presenti, anche Evelyn e Artemis."
+    },
+    {
+      "id": "import_23",
+      "head": "section_23",
+      "text": "# AREA: IL PIANO ASTRALE PROFONDO [NOME] non si trova più nel reparto. Ora è in uno spazio aperto e instabile, senza terra vera sotto i piedi. Il cielo è una distesa nera attraversata da crepe luminose. Sotto di lui c’è il piano astrale profondo: un vuoto immenso con frammenti sospesi, rovine impossibili e correnti invisibili che trascinano tutto. Evelyn e Artemis, se presenti, compaiono a distanza, trascinati nella stessa zona. Evelyn: “Non siamo usciti… ci ha spostati.” Artemis: “Questa non è una stanza. È un livello di contenimento.” Il Dottore appare in alto, come una figura proiettata tra le crepe del cielo. “Il piano astrale non è un luogo.” Pausa. “È una gabbia fatta di coscienza.”"
+    },
+    {
+      "id": "import_24",
+      "head": "section_24",
+      "text": "# MINIGIOCO: FREE FALL Per attraversare il piano devi compiere una caduta controllata verso il punto di uscita. [OBIETTIVO] Raggiungere la soglia finale evitando gli ostacoli. [REGOLE] * Una sola vita * Nessun errore permesso * Molti più ostacoli mobili, frammenti, distorsioni, correnti di attrazione * La traiettoria cambia durante la discesa [DIFFICOLTÀ] * Journey → 560 metri * Journey Without Escape → 2400 metri Durante la caduta compaiono: * piattaforme spezzate * mura che si muovono * segmenti di buio assoluto * zone di gravità invertita * eco dei custodi * apparizioni del Dottore che cercano di deviare il giocatore [SE RIESCI] Arrivi al nucleo del piano astrale. Il Dottore perde il controllo della zona per la prima volta. Evelyn e Artemis, se vivi con loro fino alla fine, possono essere liberati insieme a te. [SE FALLISCI] La caduta si interrompe. Schermo nero. Ritorno forzato al contenimento."
+    },
+    {
+      "id": "import_25",
+      "head": "section_25",
+      "text": "# FINALI VARIANTE A [FINALE 3: ASTRAL PRISON] Il Dottore richiude il sistema. [NOME] rimane intrappolato nel piano astrale profondo, cosciente ma incapace di uscire. Ogni tentativo di fuga lo riporta nello stesso vuoto. La sua mente continua a cadere. [FINALE 4: LOST WITH THEM] [NOME], Evelyn e Artemis restano insieme ma bloccati nel contenimento. Almeno non sono soli. Ma il prezzo è diventare parte del sistema per sempre."
+    },
+    {
+      "id": "import_26",
+      "head": "section_26",
+      "text": "# VARIANTE B: IL DOTTORE NON LI CATTURA Se le scelte precedenti hanno rafforzato abbastanza: * la Fiducia con Evelyn e/o Artemis * la conoscenza degli indizi * la resistenza alla Corruzione * la capacità di interpretare il piano astrale allora il Dottore non riesce a bloccarli. [NOME], con i compagni, riesce a rompere il controllo del sistema prima dell’arresto."
+    },
+    {
+      "id": "import_27",
+      "head": "section_27",
+      "text": "# AREA: PIANO ASTRALE LIBERO Il cielo si apre. La struttura del piano cambia: non è più un recinto, ma una distesa verticale di frammenti e ponti invisibili. Il Dottore resta lontano, ma non completamente fuori gioco. “Pensavi davvero di essere uscito dal mio esperimento?” Evelyn stringe i pugni. “Non mi interessa cosa lo chiami.” Artemis guarda il vuoto sotto di sé. “Mi interessa uscire vivo.”"
+    },
+    {
+      "id": "import_28",
+      "head": "section_28",
+      "text": "# MINIGIOCO: FREE FALL [OBIETTIVO] Scendere fino al nucleo e forzare l’uscita. [REGOLE] * Una sola vita * Ostacoli più numerosi * Correnti che spingono fuori traiettoria * Segmenti di falsi pavimenti * Apparizioni che tentano di far perdere il controllo [DIFFICOLTÀ] * Journey → 560 metri * Journey Without Escape → 2400 metri [SE RIESCI] Raggiungi il nucleo e rompi la sincronizzazione del sistema. Il piano astrale collassa dietro di voi. [SE FALLISCI] Il sistema vi respinge. Uno dopo l’altro, tornate al punto di partenza."
+    },
+    {
+      "id": "import_29",
+      "head": "section_29",
+      "text": "# FINALI VARIANTE B [FINALE 5: ESCAPE] [NOME] e i compagni riescono a distruggere il collegamento con il Dottore. Si svegliano nel mondo reale. Non è una vittoria pulita: il trauma resta, i ricordi sono frammentati, e il corpo porta i segni del test. Ma sono vivi. E per la prima volta, il Dottore ha perso. [FINALE 6: TRUE DISTORTION] [NOME] esce dal piano astrale, ma scopre che una parte di sé è rimasta lì. La realtà sembra normale. Per ora. Solo che ogni tanto, nei riflessi delle vetrine o nelle finestre buie, vede ancora il cielo nero dell’astrale. Il Dottore non lo ha catturato. Ma non lo ha nemmeno lasciato andare del tutto."
+    },
+    {
+      "id": "import_30",
+      "head": "section_30",
+      "text": "# FINALE SEGRETO: DOCTOR’S CHOICE Se hai raccolto tutti i frammenti di memoria, non hai ignorato gli indizi chiave e hai mantenuto alta la fiducia con almeno uno tra Evelyn e Artemis: Durante lo scontro finale, il Dottore si toglie la maschera. Non è solo il capo dell’esperimento. È anche un soggetto precedente, sopravvissuto a una versione più antica del programma. Non controlla il sistema. Ne è prigioniero quanto gli altri. “Ho costruito questo posto per non farmi più trovare dalla mia stessa mente.” Silenzio. “E adesso non so più distinguere il mio lavoro dalla mia gabbia.” [SCELTA FINALE: FUGGI, RESTA, DISTRUGGI IL SISTEMA] [FUGGI] Abbandoni il Dottore e punti solo all’uscita. [RESTA] Decidi di aiutarlo a fermare il sistema, ma il prezzo è restare legato all’astrale. [DISTRUGGI IL SISTEMA] Scegli di rompere tutto, anche se questo significa far collassare il piano e cancellare i dati per sempre. [FINALE 7: RESET] Il piano astrale si spegne. Il Dottore, le guardie, i corridoi e le voci svaniscono. Quando [NOME] apre gli occhi, il mondo è reale. Troppo reale."
+    }
+  ],
+  "note": "Unire manualmente in data/story.json come nodi."
+}

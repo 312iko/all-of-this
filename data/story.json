@@ -1,0 +1,1415 @@
+{
+  "nodes": {
+    "intro_letter": {
+      "text": "ShinaMihu, 2043. Hai trentasei anni. La città puzza di ozono e fritto; le insegne al neon sbattono come palpebre stanche.\nLavori in una fabbrica di componenti LED: straordinari non pagati, contratto a scadenza lampo, capi che ti chiamano “risorsa”.\n\nA casa: tua madre, tuo padre, tua sorella minore. Tre letti, tre malattie, tre bollette che non chiudono mai.\nDa mesi non fai progetti. Dormi male. A volte, sul treno, pensi che sparire sarebbe più semplice che alzarsi.\n\nQuesta mattina, tra i cavi di un palo della luce, c’è una busta stropicciata. Nessun mittente.\nDentro, una sola carta: “Programma sperimentale privato. Retribuzione immediata. Nessuna domanda sul passato.”\nIn fondo, un numero da chiamare.\n\nLa pioggia leggera ti entra nel colletto. Il telefono pesa come una pietra.",
+      "choices": [
+        {
+          "text": "Chiama — non puoi permetterti di no",
+          "next": "called_number",
+          "effects": [
+            "set:first_step=true"
+          ]
+        },
+        {
+          "text": "Ripiega la busta e cammina — non oggi",
+          "next": "intro_hesitate",
+          "effects": []
+        },
+        {
+          "text": "Ricorda — un istante con la famiglia",
+          "next": "prequel_start",
+          "effects": []
+        },
+        {
+          "text": "Ignora del tutto — non ti fidi di nulla",
+          "next": "finale_helpless",
+          "effects": []
+        }
+      ]
+    },
+    "intro_hesitate": {
+      "text": "Cammini ancora cinquanta metri. Ti fermi. Il numero ti brucia nella testa.\nPensi alla sorella che tossisce. Al padre che finge di dormire quando sente piangere la madre.\n\nTorni indietro. La busta è ancora lì. Come se qualcuno volesse proprio che la trovassi.",
+      "choices": [
+        {
+          "text": "Adesso chiami",
+          "next": "called_number",
+          "effects": [
+            "set:first_step=true"
+          ]
+        },
+        {
+          "text": "Lasci perdere per sempre",
+          "next": "finale_helpless",
+          "effects": []
+        }
+      ]
+    },
+    "finale_helpless": {
+      "text": "Decidi che non è affar tuo. Getti anche il pensiero del numero.\n\nLe settimane peggiorano. Una notte, nel bagno di casa, il mondo si restringe fino a un solo pensiero lucido.\nApri la finestra. Il freddo ti colpisce. Poi il silenzio.\n\nFINALE: HELPLESS — La famiglia resta senza sostegno. La busta nel cestino era l’ultima possibilità, e tu l’hai lasciata morire lì.",
+      "choices": [
+        {
+          "text": "Menu",
+          "next": "__menu__",
+          "effects": []
+        }
+      ]
+    },
+    "called_number": {
+      "text": "Componi. Squilli lunghi. Poi una voce calma, troppo calma: “Protocollo di accoglienza attivo. Segua le istruzioni. Non faccia domande.”\n\nTi dà un indirizzo — una viuzza dietro un quartiere industriale dismesso, dove le mappe digitali smettono di avere senso.\n\nCamminando, ti chiedi se stai vendendo l’anima o solo il dolore. La risposta, forse, è la stessa cosa.",
+      "choices": [
+        {
+          "text": "Raggiungi l’indirizzo",
+          "next": "office_doctor",
+          "effects": []
+        },
+        {
+          "text": "Pensa di tornare indietro",
+          "next": "called_number_doubt",
+          "effects": []
+        }
+      ]
+    },
+    "called_number_doubt": {
+      "text": "Ti volti. Poi ricordi il respiro affannoso di tua madre stanotte.\n\nNon sei un eroe. Sei solo una persona stanca che ha bisogno di un’uscita. L’indirizzo resta lì, come un’apertura nel buio.",
+      "choices": [
+        {
+          "text": "Entra comunque nella viuzza",
+          "next": "office_doctor",
+          "effects": []
+        }
+      ]
+    },
+    "office_doctor": {
+      "text": "L’ufficio è incastrato tra due palazzi marci dall’umidità. Dentro: niente reception. Una stanza blu fredda, un monitor acceso,\nuna porta blindata che non ha maniglia dal lato sbagliato.\n\nUna voce artificiale ti accoglie: “Benvenuto, visitatore.”\n\nPoi entra lui: il DOTTORE. Camice bianco, mani pulite, maschera chirurgica nera che non sembra un vezzo — sembra una decisione.\nParla lentamente, come chi ha già visto finire questa conversazione in cento modi diversi.\n\n“Mi occupo di neuro-esposizione. Progetti non autorizzati, finanziati da persone che non vogliono firmare nulla.\nNon le venderò sogni. Le offrirò una possibilità: se supera il programma, verrà compensato. Se fallisce… almeno saprà di aver tentato.”\n\nTi porge un modulo. Le lettere piccole sono un labirinto. Le grandi, no: firma, data, consenso informato che non informa niente.",
+      "choices": [
+        {
+          "text": "Firmi — non è fiducia, è disperazione",
+          "next": "office_after_sign",
+          "effects": []
+        },
+        {
+          "text": "Chiedi chi paga davvero il programma",
+          "next": "office_who_pays",
+          "effects": [
+            "tension+1"
+          ]
+        }
+      ]
+    },
+    "office_who_pays": {
+      "text": "Il Dottore inclina appena la testa. “Fondi paralleli. Beneficenza performativa. E un po’ di gente che crede ancora nel progresso a buon mercato.”\n\nUna pausa. “Le domande costano tempo. Il tempo qui costa sangue.”\n\nNon hai una risposta che ti soddisfi. Ma hai firmato nella testa già da prima di entrare.",
+      "choices": [
+        {
+          "text": "Vai alla camera di trasferimento",
+          "next": "office_after_sign",
+          "effects": []
+        }
+      ]
+    },
+    "office_after_sign": {
+      "text": "Firmi. La penna scivola. Il Dottore non sorride: annuisce, come un tecnico che ha chiuso un ticket all'helpdesk.\n\n“Coraggio,” dice. Solo quello. E ti apre un corridoio che puzza di disinfettante e paura.",
+      "choices": [
+        {
+          "text": "Segui il Dottore",
+          "next": "capsule_choice",
+          "effects": []
+        }
+      ]
+    },
+    "capsule_choice": {
+      "text": "In fondo al corridoio una porta si chiude dietro di te con un suono secco. Ti fanno indossare una tuta sottile da test.\n\nDavanti a te si apre una capsula cilindrica. Luci interne, cavi che pendono come vene. Non sembra una bara.\nSembra qualcosa che vuole convincerti di essere medicina.\n\nIl Dottore resta oltre la soglia. “Il consenso è ancora valido fino all’ingresso,” dice. “Non possiamo forzarla.”",
+      "choices": [
+        {
+          "text": "Entri nella capsula",
+          "next": "transfer_capsule",
+          "effects": []
+        },
+        {
+          "text": "Rifiuti — non entrerai in quella cosa",
+          "next": "finale_capsule_refuse",
+          "effects": [
+            "set:capsule_refused=true"
+          ]
+        },
+        {
+          "text": "Chiedi un minuto — respira, osserva i cavi",
+          "next": "capsule_breathe",
+          "effects": []
+        }
+      ]
+    },
+    "capsule_breathe": {
+      "text": "Chiudi gli occhi. Conti fino a cinque. Senti il rumore della tua famiglia che non c’è, ma che è tutta la ragione per cui sei qui.\n\nLa capsula puzza di metallo tiepido. Il Dottore non ti spinge. Aspetta.\n\n“Non è un ingresso,” pensi. “È un contratto con il vuoto.”",
+      "choices": [
+        {
+          "text": "Entra",
+          "next": "transfer_capsule",
+          "effects": []
+        },
+        {
+          "text": "Rifiuta",
+          "next": "finale_capsule_refuse",
+          "effects": [
+            "set:capsule_refused=true"
+          ]
+        }
+      ]
+    },
+    "finale_capsule_refuse": {
+      "text": "“Il protocollo richiede consenso attivo,” dice il Dottore. Non alza la voce.\n\nTi scortano fuori. Nessun pagamento. Nessun esperimento. Solo la nebbia di ShinaMihu che ti aspetta come un lenzuolo sporco.\n\nTorni alla fabbrica. Torni alle bollette. Torni a essere solo.\n\nFINALE: RIFIUTO — Hai tenuto il controllo del tuo corpo, ma non hai tenuto la possibilità che forse — solo forse — poteva salvare qualcuno.",
+      "choices": [
+        {
+          "text": "Menu",
+          "next": "__menu__",
+          "effects": []
+        }
+      ]
+    },
+    "transfer_capsule": {
+      "text": "Entri. La porta della capsula si chiude. Le luci diventano bianche, poi blu, poi nulla.\n\nIl corpo si irrigidisce; la respirazione si spezza. Per un attimo non capisci se stai cadendo o se sei già fermo da sempre.\n\nPoi il rumore del mondo reale smette di esistere.\n\nQuando apri gli occhi, non sei più nella stanza.",
+      "choices": [
+        {
+          "text": "…",
+          "next": "piano_astrale_wake",
+          "effects": [
+            "act:1"
+          ]
+        }
+      ]
+    },
+    "piano_astrale_wake": {
+      "text": "Prato verde sospeso nel nulla. Il cielo è immobile, troppo perfetto. In lontananza, rocce nere e nebbia che non si muove come dovrebbe.\n\nLa voce del Dottore arriva da ogni direzione insieme, come un audio mal sincronizzato:\n\n“Benvenuto nel piano astrale, [NOME]. Qui la mente non si limita a osservare. Costruisce. Ricorda. Si difende.\nE se non regge… collassa.”\n\nUna pausa. “Troverà altri soggetti. Alcuni collaboreranno. Altri no. Tutto ciò che decide qui influenzerà la sua possibilità di tornare.”\n\nL’aria vibra. Poi, da lontano, senti passi. E una risata nervosa che non è la tua.",
+      "choices": [
+        {
+          "text": "Avanza verso i passi",
+          "next": "meet_subjects",
+          "effects": []
+        },
+        {
+          "text": "Fermati — osserva l’orizzonte prima",
+          "next": "piano_astrale_observe",
+          "effects": []
+        }
+      ]
+    },
+    "piano_astrale_observe": {
+      "text": "Ti fermi. Cercare un dettaglio qui è come cercare un errore in un sogno: più lo guardi, più il sogno ti guarda.\n\nNoti però qualcosa: ombre che non hanno corrispondenza con nulla che cammina. E un suono lontano, come pagine girate in una biblioteca sommersa.\n\nPoi i passi si avvicinano. Non sei più solo.",
+      "choices": [
+        {
+          "text": "Unisciti alle figure",
+          "next": "meet_subjects",
+          "effects": []
+        }
+      ]
+    },
+    "meet_subjects": {
+      "text": "Due figure emergono dalla nebbia.\n\nEVELYN — capelli biondi, occhi stanchi, mani che stringono nulla. È finita nel programma per debiti di gioco e prestiti che si sono mangiati la vita.\n\nARTEMIS — postura da modello, sguardo duro. Truffa contrattuale, carriera mai decollata, dignità smontata pezzo per pezzo.\n\n“Pensavamo di essere soli,” dice Evelyn. “Dio, quanto odio essere felice di sbagliare.”\n\nArtemis non sorride. “Se questo è un test, allora qualcuno ci sta guardando reagire. E io non gli voglio dare la soddisfazione.”\n\nSenti anche tu la sensazione: non siete in un luogo. Siete in una domanda.",
+      "choices": [
+        {
+          "text": "“Meglio in tre che da soli.” — Ti avvicini",
+          "next": "path_friendship",
+          "effects": [
+            "group_mode",
+            "trust_evelyn+2",
+            "trust_artemis+2"
+          ]
+        },
+        {
+          "text": "“Non vi conosco.” — Mantieni distanza",
+          "next": "path_alone",
+          "effects": [
+            "isolated_mode"
+          ]
+        },
+        {
+          "text": "“Chiunque vi abbia mandati… non è un amico.” — Ostilità controllata",
+          "next": "path_suspicious",
+          "effects": [
+            "trust_evelyn+1",
+            "tension+1"
+          ]
+        }
+      ]
+    },
+    "path_suspicious": {
+      "text": "Evelyn sospira. “Giusto. Anch’io non mi fiderei di me.”\n\nArtemis ti osserva. “Allora camminiamo paralleli. Non amici. Non nemici. Solo… coesistenti.”\n\nÈ un gruppo fragile. Ma è comunque più informazione di quanta ne avevi un minuto fa.",
+      "choices": [
+        {
+          "text": "Verso la distesa",
+          "next": "area_distesa_intro",
+          "effects": [
+            "group_mode"
+          ]
+        }
+      ]
+    },
+    "path_friendship": {
+      "text": "Ti avvicini. “Rimanere soli qui è una pessima idea.”\n\nEvelyn abbassa lo sguardo, poi annuisce. “Non so dove siamo. Ma so che non mi piace.”\n\nArtemis guarda il prato come fosse un set fotografico sbagliato. “Se è un esperimento, il punto non è solo sopravvivere.\nQualcuno sta misurando come reagiamo quando nessuno sta guardando — tranne loro.”\n\nUn rumore metallico lontano, come una porta che non si apre mai del tutto. Decidete di restare insieme, almeno per ora.",
+      "choices": [
+        {
+          "text": "Esplorate la distesa",
+          "next": "area_distesa_intro",
+          "effects": []
+        }
+      ]
+    },
+    "path_alone": {
+      "text": "“Se questo posto è una farsa,” pensi, “stare vicino agli altri può essere un errore.”\n\nTi allontani senza spiegazioni. Evelyn prova a chiamarti: la sua voce si spegne nella nebbia come una goccia in un bicchiere troppo grande.\n\nIl silenzio torna. Più pesante. Più “tuo”.\n\nModalità isolata attiva — non sei più un gruppo. Sei un campione singolo. E il piano astrale adora i soli.",
+      "choices": [
+        {
+          "text": "Cammina nella distesa",
+          "next": "area_distesa_intro",
+          "effects": []
+        }
+      ]
+    },
+    "area_distesa_intro": {
+      "text": "Dopo pochi minuti trovi un oggetto luminoso a terra. Quando lo tocchi, una voce distorta sussurra:\n\n“Tre luci aprono la via… ma una mente chiusa non vedrà mai il passaggio.”\n\nDevi trovare altri due frammenti nella zona. Ogni passo sembra pesare di più.",
+      "kind": "fragment_hunt",
+      "fragment_layout": "default",
+      "next_after": "vision_fragment"
+    },
+    "vision_fragment": {
+      "text": "Quando il terzo frammento scatta in mano tua, il suolo vibra. I frammenti si sollevano e si dispongono in un cerchio sospeso.\n\nPer un istante la realtà si sovrappone a un’altra immagine: corridoio bianco, monitor accesi, cavi, e il DOTTORE senza maschera — un volto che non ricorderai, ma che riconoscerai nei incubi.\n\nPoi tutto si richiude con un sibilo.\n\n[OGGETTO: Frammento di Memoria — attenua l’influenza del Dottore in alcune zone dell’astrale.]",
+      "choices": [
+        {
+          "text": "Segui il passaggio che si è aperto",
+          "next": "after_vision",
+          "effects": [
+            "fragments:3",
+            "memory_fragment",
+            "clue:memory_shard"
+          ]
+        }
+      ]
+    },
+    "after_vision": {
+      "text": "",
+      "choices": []
+    },
+    "sentiero_group": {
+      "text": "ATTO I — IL SENTIERO\n\nIl prato finisce come se qualcuno avesse tagliato il mondo con una lama. Sotto i piedi: roccia nera, crepe luminose, aria calda e densa.\n\nEvelyn deglutisce. “Ok. Questo è molto peggio.”\n\nArtemis si stringe le braccia. “Almeno adesso sembra… costruito. E questo mi spaventa più della nebbia.”\n\nOmbre si muovono ai margini della vista — non sempre nella stessa direzione del vento… se ci fosse vento.",
+      "choices": [
+        {
+          "text": "Osserva le ombre",
+          "next": "observe_result",
+          "effects": [
+            "clue:fear"
+          ]
+        },
+        {
+          "text": "Ignora e resta sul sentiero",
+          "next": "ignore_result",
+          "effects": [
+            "set:ignored_shadows=true",
+            "tension+1"
+          ]
+        },
+        {
+          "text": "Parla con Evelyn del rumore metallico",
+          "next": "sentiero_evelyn_talk",
+          "effects": [
+            "trust_evelyn+1"
+          ],
+          "show_if": "group_mode"
+        }
+      ]
+    },
+    "sentiero_evelyn_talk": {
+      "text": "Evelyn ti guarda. “Senti anche tu quel rumore? Come una serratura che qualcuno prova dall’interno.”\n\nArtemis stringe i denti. “Se è una prova, non gli daremo la scena che vogliono.”\n\nVi rimettere in cammino. Le ombre non aspettano permessi.",
+      "choices": [
+        {
+          "text": "Parla ancora con Evelyn",
+          "next": "evelyn_arc",
+          "effects": [],
+          "show_if": "group_mode"
+        },
+        {
+          "text": "Chiedi ad Artemis qualcosa",
+          "next": "artemis_arc",
+          "effects": [],
+          "show_if": "group_mode"
+        },
+        {
+          "text": "Continua",
+          "next": "incontro_creatura",
+          "effects": []
+        }
+      ]
+    },
+    "sentiero_solo": {
+      "text": "ATTO I — IL SENTIERO (SOLI)\n\nIl prato scompare. Resta roccia, calore, e un silenzio totale — troppo totale, come una stanza anecoica della mente.\n\nOmbre ai margini. Non sai se sono errori del piano o messaggi.\n\nTi senti osservato. Non da una persona: da un sistema.",
+      "choices": [
+        {
+          "text": "Osserva",
+          "next": "observe_result_solo",
+          "effects": [
+            "clue:fear"
+          ]
+        },
+        {
+          "text": "Ignora",
+          "next": "ignore_result",
+          "effects": [
+            "set:ignored_shadows=true",
+            "tension+1"
+          ]
+        }
+      ]
+    },
+    "observe_result": {
+      "text": "Ti fermi e cerchi di mettere a fuoco. Tra le ombre compare per un attimo una sagoma umana — un riflesso fuori fase, come un frame duplicato.\n\nINDIZIO: il piano astrale reagisce alla paura. Non in modo umano: in modo da protocollo.",
+      "choices": [
+        {
+          "text": "Prosegui",
+          "next": "incontro_creatura",
+          "effects": []
+        }
+      ]
+    },
+    "observe_result_solo": {
+      "text": "Ti concentri da solo. Ogni dettaglio pesa di più perché non hai voce che ti distragga dall’orrore silenzioso.\n\nINDIZIO: il piano astrale reagisce alla paura.",
+      "choices": [
+        {
+          "text": "Prosegui",
+          "next": "incontro_creatura",
+          "effects": []
+        }
+      ]
+    },
+    "ignore_result": {
+      "text": "Decidi di non dare peso alle ombre. È una strategia — o una negazione.\n\nNon succede nulla di visibile. Ma la sensazione di essere seguito resta, appiccicata alla nuca.\n\nTensione +.",
+      "choices": [
+        {
+          "text": "Prosegui",
+          "next": "incontro_creatura",
+          "effects": []
+        }
+      ]
+    },
+    "incontro_creatura": {
+      "text": "Una figura emerge dalla nebbia. Umana… ma sbagliata: braccia troppo lunghe, passo spezzato, volto indistinto come cancellato a mano.\n\nNon attacca subito. Ti studia come un bug da classificare.",
+      "choices": [
+        {
+          "text": "Attacca con forza",
+          "next": "fight_creature",
+          "effects": [
+            "corruption+1",
+            "clue:brute_force"
+          ],
+          "show_if": "strength>=2"
+        },
+        {
+          "text": "Affrontala",
+          "next": "fight_creature",
+          "effects": [
+            "corruption+1"
+          ]
+        },
+        {
+          "text": "Nasconditi",
+          "next": "hide_creature",
+          "effects": [
+            "trust_evelyn-1"
+          ],
+          "show_if": "group_mode"
+        },
+        {
+          "text": "Nasconditi",
+          "next": "hide_creature_solo",
+          "effects": [],
+          "show_if": "isolated_mode"
+        },
+        {
+          "text": "Parla — anche se non ha voce",
+          "next": "communicate_creature",
+          "effects": [
+            "clue:exit_fake"
+          ]
+        }
+      ]
+    },
+    "fight_creature": {
+      "text": "Reagisci. Non è un combattimento da film: è sopravvivenza. Qualcosa si rompe nella creatura — o nel modo in cui la percepisci.\n\nOttieni un Frammento Corrotto. Senti freddo nelle dita.\n\nCorruzione +.",
+      "choices": [
+        {
+          "text": "Verso la caverna",
+          "next": "cave_entrance",
+          "effects": []
+        }
+      ]
+    },
+    "hide_creature": {
+      "text": "Ti nascondi dietro una piega di roccia che non dovrebbe esistere. La creatura passa oltre.\n\nEvelyn, più tardi: “Non puoi scappare da tutto.” La frase ti punge.\n\nFiducia Evelyn −.",
+      "choices": [
+        {
+          "text": "Verso la caverna",
+          "next": "cave_entrance",
+          "effects": []
+        }
+      ]
+    },
+    "hide_creature_solo": {
+      "text": "Ti nascondi nel silenzio. La creatura se ne va senza fretta, come se avesse già scritto la tua reazione in un report.",
+      "choices": [
+        {
+          "text": "Verso la caverna",
+          "next": "cave_entrance",
+          "effects": []
+        }
+      ]
+    },
+    "communicate_creature": {
+      "text": "Parli piano. La creatura si blocca. Per un secondo sembra quasi imbarazzata.\n\n“…uscita… falsa…” sussurra. Poi si dissolve nella nebbia.\n\nINDIZIO: non tutte le uscite sono reali — alcune sono solo interruzioni del dolore.",
+      "choices": [
+        {
+          "text": "Verso la caverna",
+          "next": "cave_entrance",
+          "effects": []
+        }
+      ]
+    },
+    "cave_entrance": {
+      "text": "Il terreno scende. Si apre una caverna che respira — o che imita il respiro.\n\nIl Dottore appare come una proiezione instabile. “Vi state adattando più in fretta del previsto,” dice. “Questo mi interessa.”\n\nPausa. “Molto.”",
+      "choices": [
+        {
+          "text": "Entra nella caverna",
+          "next": "act1_end",
+          "effects": []
+        },
+        {
+          "text": "Chiedi cosa vuol dire “interessa”",
+          "next": "cave_entrance_ask",
+          "effects": [
+            "tension+1"
+          ],
+          "show_if": "group_mode"
+        }
+      ]
+    },
+    "cave_entrance_ask": {
+      "text": "La proiezione inclina la testa. “Vuol dire che il modello non vi ha ancora distrutti del tutto. E questo è… promettente.”\n\nArtemis impreca sottovoce. Evelyn impallidisce.\n\nLa caverna non aspetta risposte umane.",
+      "choices": [
+        {
+          "text": "Entra",
+          "next": "act1_end",
+          "effects": []
+        }
+      ]
+    },
+    "act1_end": {
+      "text": "Buio totale. Poi luce.\n\nE sei solo.\n\nTRANSIZIONE — “LE RELAZIONI NON SONO SOLO EMOZIONI. QUI SONO ANCORE.”\n\nFine dell’Atto I.",
+      "choices": [
+        {
+          "text": "Atto II — la maschera dell’istituto",
+          "next": "act2_cave",
+          "effects": [
+            "act:2"
+          ]
+        }
+      ]
+    },
+    "act2_cave": {
+      "text": "ATTO II — LA CAVERNA\n\nLa caverna è stretta, calda, irregolare. Le pareti sembrano pulsare come se respirassero a tempo con te.\n\nIn fondo, una pietra diversa dalle altre. Sotto: un passaggio nascosto. Non ti chiedi se è una trappola — non hai più spazio per domande eleganti.",
+      "choices": [
+        {
+          "text": "Scendi",
+          "next": "act2_corridor",
+          "effects": []
+        },
+        {
+          "text": "Cerca segni lasciati da altri",
+          "next": "act2_cave_graffiti",
+          "effects": [
+            "clue:graffiti"
+          ]
+        }
+      ]
+    },
+    "act2_cave_graffiti": {
+      "text": "Trovi incisioni: nomi cancellati, numeri, una frase ripetuta: “NON GUARDARE IL SOFFITTO”.\n\nNon guardi. (Per un secondo.)\n\nINDIZIO: altri sono passati di qui — e hanno lasciato paura come cartografia.",
+      "choices": [
+        {
+          "text": "Scendi il passaggio",
+          "next": "act2_corridor",
+          "effects": []
+        }
+      ]
+    },
+    "act2_corridor": {
+      "text": "Un corridoio stretto porta a una porta blindata. Accanto al tastierino, inciso nel metallo:\n\n“NON CERCARE LA CHIAVE. CERCA LA REGOLA.”\n\n",
+      "kind": "keypad",
+      "next_success": "institute_room",
+      "next_fail": "game_over_door"
+    },
+    "game_over_door": {
+      "text": "Inserisci un codice sbagliato troppe volte.\n\nUn suono acuto. Silenzio. Poi un’esplosione che non ha calore — solo interruzione.\n\nGAME OVER",
+      "choices": [
+        {
+          "text": "Menu",
+          "next": "__menu__",
+          "effects": []
+        }
+      ]
+    },
+    "institute_room": {
+      "text": "ATTO II — L’ISTITUTO\n\nLa porta si apre su una stanza che sembra un reparto psichiatrico abbandonato. Luci fredde, cinghie, monitor spenti.\nL’odore è quello del contenimento: metallo, plastica, paura pulita.\n\nSulle pareti, incisioni a mano:\n\n“NON È REALE” — “NON FIDARTI DELLE VOCI” — “LUI GUARDA”",
+      "choices": [
+        {
+          "text": "Esplora",
+          "next": "institute_explore",
+          "effects": []
+        }
+      ]
+    },
+    "institute_explore": {
+      "text": "Letto: graffi profondi, come se qualcuno avesse provato a uscire dal proprio corpo.\n\nPareti: messaggi che si contraddicono, come un cervello che discute con se stesso.\n\nUn macchinario lampeggia un istante — abbastanza da farti credere di aver visto una faccia nello schermo.",
+      "choices": [
+        {
+          "text": "Tocca il macchinario",
+          "next": "institute_machine",
+          "effects": [
+            "clue:monitoring"
+          ]
+        },
+        {
+          "text": "Leggi tutte le incisioni",
+          "next": "institute_wall_read",
+          "effects": [
+            "tension+1"
+          ]
+        },
+        {
+          "text": "Esplora l'ala ospedaliera",
+          "next": "hospital_wing",
+          "effects": []
+        },
+        {
+          "text": "Vai alla porta",
+          "next": "custodi_arrival",
+          "effects": []
+        }
+      ]
+    },
+    "institute_wall_read": {
+      "text": "Più leggi, più le frasi diventano vive. Una ti rimane addosso: “SE RIESCI A LEGGERE QUESTO, SEI ANCORA UTILE.”\n\nTi viene un voltastomaco, non è metafora: è il piano che ti tocca lo stomaco come dato.",
+      "choices": [
+        {
+          "text": "Tocca il macchinario",
+          "next": "institute_machine",
+          "effects": [
+            "clue:monitoring"
+          ]
+        },
+        {
+          "text": "Vai alla porta",
+          "next": "custodi_arrival",
+          "effects": []
+        }
+      ]
+    },
+    "institute_machine": {
+      "text": "Per un secondo senti una voce reale, filtrata e lontana:\n\n“…parametri instabili… soggetto non sincronizzato… correlazione astrale al 78%…”\n\nPoi silenzio.\n\nINDIZIO: il piano astrale è collegato a un sistema di monitoraggio reale — qualcosa che non è solo nella tua testa.",
+      "choices": [
+        {
+          "text": "Verso la porta",
+          "next": "custodi_arrival",
+          "effects": []
+        }
+      ]
+    },
+    "custodi_arrival": {
+      "text": "La porta si apre. Entrano due figure con uniformi scure e visiere opache. Non sembrano medici. Sembrano guardiani di un confine.\n\n“Cittadini non autorizzati.”\n“Dovete lasciare immediatamente l’area.”\n\nArtemis stringe i pugni — se è con te. Evelyn respira in modo strano — se è con te.\nSe sei solo, il silenzio è ancora più pesante.",
+      "choices": [
+        {
+          "text": "Accetta di essere scortato fuori",
+          "next": "finale_return_factory",
+          "effects": []
+        },
+        {
+          "text": "Rifiuta — non ti muoverai così",
+          "next": "custodi_click_minigame",
+          "effects": []
+        },
+        {
+          "text": "Cerca di negoziare tempo",
+          "next": "custodi_negotiate",
+          "effects": [
+            "tension+1"
+          ],
+          "show_if": "group_mode"
+        }
+      ]
+    },
+    "custodi_negotiate": {
+      "text": "Parli. La voce ti trema. “Abbiamo bisogno di capire dove siamo.”\n\nI custodi non negoziano. Si irrigidiscono.\n\n“Decisione non conforme,” dice uno. L’altro alza una mano — e il monitor dietro di te si accende.\n\nSei costretto al minigioco comunque.",
+      "choices": [
+        {
+          "text": "Sequenza sul monitor",
+          "next": "custodi_click_minigame",
+          "effects": []
+        }
+      ]
+    },
+    "finale_return_factory": {
+      "text": "Alzi le mani. Ti scortano. Corridoio infinito, luci che si spengono una dopo l’altra.\n\nPorta. Buio.\n\nQuando la luce torna, sei di nuovo in fabbrica. Il turno sta per iniziare. Come se nulla fosse successo.\n\nMa qualcosa è cambiato per sempre: il confine tra reale e astrale non è più netto.\n\nFINALE: RETURN WITHOUT ESCAPE",
+      "choices": [
+        {
+          "text": "Menu",
+          "next": "__menu__",
+          "effects": []
+        }
+      ]
+    },
+    "custodi_click_minigame": {
+      "text": "“Nessuno di voi mi porta da nessuna parte.”\n\nI custodi si irrigidiscono. “Decisione non conforme.”\n\nSul monitor compaiono cerchi: colpiscili in fretta. Il sistema misura precisione e panico.",
+      "kind": "click_sequence",
+      "next_success": "after_custodi_escape",
+      "next_fail": "branch_captured"
+    },
+    "branch_captured": {
+      "text": "Immobilizzato. Cinghie. Urli, ma la stanza assorbe il suono come spugna.\n\nVoce registrata: “Soggetto instabile. Sincronizzazione incompleta. Contenimento avviato.”\n\nSchermo nero.",
+      "choices": [
+        {
+          "text": "…",
+          "next": "act2_finale_doctor",
+          "effects": [
+            "set:custodi_click_failed=true"
+          ]
+        }
+      ]
+    },
+    "after_custodi_escape": {
+      "text": "Corri. Il corridoio cambia struttura a ogni passo: ospedale, roccia, metallo, vuoto.\n\nArrivi in una stanza essenziale. Una sedia. E il Dottore — non come eco. Carne, osso, stanchezza reale.\n\n“Finalmente,” dice. E la parola non è sollievo: è un verbo che chiude.",
+      "choices": [
+        {
+          "text": "Ascolta",
+          "next": "act2_finale_doctor",
+          "effects": [
+            "set:click_minigame_won=true"
+          ]
+        }
+      ]
+    },
+    "act2_finale_doctor": {
+      "text": "Il Dottore alza lentamente la testa. Gli occhi — quelli che puoi vedere — non sono trionfali. Sono stanchi.\n\n“Adesso possiamo smettere di fingere,” dice.\n\nE il mondo attorno a te non ‘cambia scena’: si spacca come vetro, lasciandoti cadere nell’eco successiva.\n\nFine dell’Atto II — e inizio di qualcosa che non è più un reparto.",
+      "choices": [
+        {
+          "text": "Segui la frattura — Atto III",
+          "next": "act3_echo_intro",
+          "effects": [
+            "act:3"
+          ]
+        }
+      ]
+    },
+    "act3_echo_intro": {
+      "text": "ATTO III — GLI ECHI DELLA BIBLIOTECA\n\nNon stai ‘camminando’: stai scivolando tra strati. I corridoi si piegano come carta bagnata.\nSenti di nuovo quel rumore lontano di pagine girate.\n\nUna voce nuova, femminile, quasi educativa:\n\n“Se sei arrivato fin qui senza smettere di essere te stesso… congratulazioni. Sei un dataset interessante.”\n\nUna figura esce dall’ombra: abito semplice, mani piene di tag, occhi che sembrano aver già letto tutto ciò che dirai.\n\n“Mi chiamano MIREI. Non sono un medico. Sono quella che cataloga ciò che il piano astrale vorrebbe dimenticare.”",
+      "choices": [
+        {
+          "text": "“Chi ti paga?”",
+          "next": "act3_mirei_who",
+          "effects": [
+            "trust_mirei+1"
+          ]
+        },
+        {
+          "text": "“Non mi fido delle guide.”",
+          "next": "act3_mirei_doubt",
+          "effects": [
+            "trust_mirei-1",
+            "tension+1"
+          ]
+        },
+        {
+          "text": "Resti in silenzio",
+          "next": "act3_mirei_silence",
+          "effects": []
+        }
+      ]
+    },
+    "act3_mirei_who": {
+      "text": "Mirei sorride senza allegria. “Pago io, in tempo. Il Dottore paga in senso di colpa. Il Protocollo paga in coerenza.\nE tu pagherai in qualsiasi moneta ti resta.”\n\nPausa. “Se vuoi uscire, impara a distinguere memoria da pubblicità.”",
+      "choices": [
+        {
+          "text": "Continua",
+          "next": "act3_archive_gate",
+          "effects": []
+        }
+      ]
+    },
+    "act3_mirei_doubt": {
+      "text": "Mirei annuisce. “Bene. La fiducia cieca qui è veleno. Ma la diffidenza totale è solitudine accelerata.”\n\nTi guarda come si guarda un animale che potrebbe mordere la mano giusta.",
+      "choices": [
+        {
+          "text": "Continua",
+          "next": "act3_archive_gate",
+          "effects": []
+        }
+      ]
+    },
+    "act3_mirei_silence": {
+      "text": "Resti in silenzio. Mirei inclina la testa. “Parlare poco non è virtù, qui. È solo… risparmio di dolore.”\n\nMa non ti giudica. Sembra quasi rispettarti.",
+      "choices": [
+        {
+          "text": "Continua",
+          "next": "act3_archive_gate",
+          "effects": [
+            "trust_mirei+1"
+          ]
+        }
+      ]
+    },
+    "act3_archive_gate": {
+      "text": "Vi avvicinate a una porta senza maniglia: solo un pannello numerico e una scritta incisa:\n\n“L’ANNO IN CUI HAI SMesso DI SOGNARE È LA CHIAVE — MA SOLO SE LO RICORDI.”\n\n(Mirei sussurra: “Non è filosofia. È un codice stupido che funziona.”)\n\n",
+      "kind": "keypad",
+      "keypad_answer": "2043",
+      "next_success": "act3_kenji_screen",
+      "next_fail": "game_over_door"
+    },
+    "act3_kenji_screen": {
+      "text": "Oltre la porta: una stanza piena di monitor spenti, tranne uno. Sullo schermo compare un volto spezzato, ricomposto male.\n\n“Kenji,” dice Mirei. “Tecnico di campo. Morto nel mondo reale, ma la sua attenzione… è rimasta incollata al protocollo.”\n\nLa voce di Kenji gracchia: “Se mi vedi, non sono io. Sono ciò che è sopravvissuto al taglio.”\n\nTi chiede qualcosa. Un indovinello — non per intelligenza, per allineamento.",
+      "choices": [
+        {
+          "text": "Ascolta l’indovinello",
+          "next": "act3_kenji_riddle",
+          "effects": [
+            "trust_kenji+1"
+          ]
+        }
+      ]
+    },
+    "act3_kenji_riddle": {
+      "text": "KENJI (sullo schermo): “Il Protocollo non odia la paura. Odia l’imprevisto. Cosa spegne il piano quando smette di essere profittevole?”\n\nA) La pietà\nB) Il silenzio\nC) L’errore non classificato\nD) La gratitudine",
+      "choices": [
+        {
+          "text": "A — La pietà",
+          "next": "act3_kenji_wrong",
+          "effects": [
+            "trust_kenji-1",
+            "tension+1"
+          ]
+        },
+        {
+          "text": "B — Il silenzio",
+          "next": "act3_kenji_wrong",
+          "effects": [
+            "trust_kenji-1",
+            "tension+1"
+          ]
+        },
+        {
+          "text": "C — L’errore non classificato",
+          "next": "act3_kenji_ok",
+          "effects": [
+            "trust_kenji+2",
+            "clue:kenji_truth"
+          ]
+        },
+        {
+          "text": "D — La gratitudine",
+          "next": "act3_kenji_wrong",
+          "effects": [
+            "trust_kenji-1",
+            "tension+1"
+          ]
+        }
+      ]
+    },
+    "act3_kenji_wrong": {
+      "text": "Lo schermo lampeggia. “Risposta non ottimale,” dice Kenji. Ma non è crudele — è… deluso.\n\n“Riprova. Il Protocollo ama chi sbaglia in modo misurabile.”",
+      "choices": [
+        {
+          "text": "Riprova l’indovinello",
+          "next": "act3_kenji_riddle",
+          "effects": []
+        }
+      ]
+    },
+    "act3_kenji_ok": {
+      "text": "Kenji si stabilizza un istante. “Esatto. L’errore non classificato è ciò che rompe il modello. Per questo vi temono.”\n\nMirei chiude gli occhi. “Andiamo. Prima che il Dottore rimetti ordine.”",
+      "choices": [
+        {
+          "text": "Verso la caccia ai frammenti d’eco",
+          "next": "act3_echo_hunt",
+          "effects": []
+        }
+        ,
+        {
+          "text": "Indaga l'archivio tecnico di Kenji",
+          "next": "kenji_archive_intro",
+          "effects": [],
+          "show_if": "trust_kenji>=1"
+        }
+        ,
+        {
+          "text": "Chiedi a Mirei dell'archivio",
+          "next": "mirei_archive_intro",
+          "effects": [],
+          "show_if": "trust_mirei>=1"
+        }
+      ]
+    },
+    "act3_echo_hunt": {
+      "text": "ENIGMA — FRAMMENTI D’ECO\n\nMirei: “Tre schegge di ricordo rubato. Non servono al Dottore: gli servono a te, se vuoi testimoniare.”\n\nRaccoglili muovendoti nell’area. (Stesso schema del primo enigma, ma il luogo ‘risponde’ diverso.)",
+      "kind": "fragment_hunt",
+      "fragment_layout": "echo",
+      "fragment_mode": "echo",
+      "next_after": "act3_to_act4"
+    },
+    "act3_to_act4": {
+      "text": "Gli ultimi frammenti si incastrano. Un suono di campana lontana — metallico, innaturale.\n\nMirei ti afferra il polso — non per violenza, per ancorarti.\n\n“Adesso scenderai nel punto in cui il piano smette di fingere e inizia a giudicare,” dice. “Atto IV. La Voce del Protocollo.”\n\nFine dell’Atto III.",
+      "choices": [
+        {
+          "text": "Entra nel cerchio",
+          "next": "act4_threshold",
+          "effects": [
+            "act:4",
+            "trust_mirei+1"
+          ]
+        }
+      ]
+    },
+    "act4_threshold": {
+      "text": "ATTO IV — IL TRIBUNALE DEL PROTOCOLLO\n\nTi trovi in uno spazio che non ha pareti vere: solo linee luminose che disegnano una sala.\n\nDavanti a te, una figura senza volto — o meglio: un volto che cambia troppo spesso per essere un nome.\n\nVOCE DEL PROTOCOLLO (V.P.): “Soggetto [NOME]. Siamo al di sopra dell’istituto. Siamo al di sopra del Dottore. Qui si decide cosa resta reale.”\n\nSe Evelyn e Artemis sono con te, compaiono lontane, come testimoni non autorizzati ma presenti.",
+      "choices": [
+        {
+          "text": "Chiedi perché sei qui",
+          "next": "act4_vp_why",
+          "effects": []
+        },
+        {
+          "text": "Accusa il sistema",
+          "next": "act4_accuse",
+          "effects": [
+            "set:act4_betrayed=true"
+          ]
+        },
+        {
+          "text": "Cerca misericordia",
+          "next": "act4_mercy",
+          "effects": [
+            "trust_mirei+1"
+          ]
+        }
+      ]
+    },
+    "act4_vp_why": {
+      "text": "V.P.: “Perché il tuo dolore è datato. Perché la tua paura è replicabile. Perché la tua speranza — quella che ti ha fatto firmare — è un’ottima variabile.”\n\nMirei stringe i denti, ma non parla. Non le è permesso, qui.",
+      "choices": [
+        {
+          "text": "Continua",
+          "next": "act4_witness",
+          "effects": []
+        }
+      ]
+    },
+    "act4_accuse": {
+      "text": "Urlare non serve. Eppure lo fai con la testa.\n\nV.P.: “L’accusa è un input. Non un verdetto.”\n\nSenti qualcosa spezzarsi nel rumore — forse la tua idea di giustizia.",
+      "choices": [
+        {
+          "text": "Continua",
+          "next": "act4_witness",
+          "effects": []
+        }
+      ]
+    },
+    "act4_mercy": {
+      "text": "V.P.: “La misericordia è un costo. Chi la chiede paga in coerenza.”\n\nMirei ti guarda come per dirti: non è finita male. Non ancora.",
+      "choices": [
+        {
+          "text": "Continua",
+          "next": "act4_witness",
+          "effects": []
+        }
+      ]
+    },
+    "act4_witness": {
+      "text": "V.P.: “Presenta una prova che il piano astrale non è solo simulazione.”\n\nSe sei in gruppo, Evelyn dice: “Abbiamo paura vera. Non si compra.” Artemis aggiunge: “E abbiamo fame. Anche quella è reale.”\n\nSe sei solo, la Voce si avvicina — non fisicamente, come concetto.\n\nMirei ti porge un ultimo indizio: “Il Protocollo ha un nome segreto nel codice. Non è amore. È continuità.”",
+      "choices": [
+        {
+          "text": "Offri gli indizi raccolti (paura, uscite, monitoraggio…)",
+          "next": "act4_protocol_clue",
+          "effects": [
+            "clue:protocol",
+            "set:saw_core_truth=true"
+          ]
+        },
+        {
+          "text": "Taci — non consegnare tutto",
+          "next": "act4_protocol_weak",
+          "effects": [
+            "tension+2"
+          ]
+        }
+      ]
+    },
+    "act4_protocol_clue": {
+      "text": "V.P. si ferma. Per la prima volta, il silenzio non è minaccia: è calcolo.\n\n“Continuità confermata,” dice. “Il piano astrale è agganciato a monitoraggio reale. Non siete solo menti: siete canali.”\n\nINDIZIO: protocol — la catena che lega esperimento e mondo.\n\nMirei: “Adesso il Dottore non può chiuderti come un file. Hai nome pubblico, nel senso peggiore del termine.”",
+      "choices": [
+        {
+          "text": "Verso il verdetto finale",
+          "next": "act4_verdict_hub",
+          "effects": []
+        }
+      ]
+    },
+    "act4_protocol_weak": {
+      "text": "Taci. La Voce non si offende. “Input insufficiente,” dice. “Ma interessante: resistenza.”\n\nMirei impreca sottovoce. “Ci hai messo in una posizione peggiore,” sussurra. “Ma forse più onesta.”\n\nNon ottieni il clue protocol — ma ottieni una crepa diversa: dubbio.",
+      "choices": [
+        {
+          "text": "Verso il verdetto",
+          "next": "act4_verdict_hub",
+          "effects": []
+        }
+      ]
+    },
+    "act4_verdict_hub": {
+      "text": "ATTO IV — VERDETTO\n\nV.P.: “Scegli come chiudere questa testimonianza.”\n\nMirei ti guarda. Kenji lampeggia su un monitor laterale, troppo umano per essere solo codice.\n\nQui puoi andare dritto all’Atto V — il nucleo finale — oppure accettare strade che non sono uscita, ma… patto.",
+      "choices": [
+        {
+          "text": "Vai all’Atto V — nucleo e caduta finale",
+          "next": "act5_resolve",
+          "effects": [
+            "act:5"
+          ]
+        },
+        {
+          "text": "Accetta il patto di Mirei — biblioteca eterna",
+          "next": "finale_mirei_pact",
+          "effects": [],
+          "show_if": "mirei_2"
+        },
+        {
+          "text": "Lascia che Kenji si ‘fonda’ con te — errore consapevole",
+          "next": "finale_kenji_merge",
+          "effects": [],
+          "show_if": "kenji_2"
+        },
+        {
+          "text": "Resta nel tradimento che hai dichiarato",
+          "next": "finale_betrayal_echo",
+          "effects": [],
+          "show_if": "flag:act4_betrayed"
+        }
+      ]
+    },
+    "act5_resolve": {
+      "text": "",
+      "choices": []
+    },
+    "act5_secret_doctor": {
+      "text": "ATTO V — SEGRETO\n\nIl Dottore si toglie la maschera. Non è solo il capo dell’esperimento: è un soggetto precedente, sopravvissuto a una versione più antica.\n\n“Ho costruito questo posto per non farmi più trovare dalla mia stessa mente,” dice. “E ora non distinguo il mio lavoro dalla mia gabbia.”\n\nLe condizioni del segreto erano crudeli: memoria, indizi, fiducia, ombre non ignorate — e la verità del Protocollo.",
+      "choices": [
+        {
+          "text": "Fuggi — punta solo all’uscita",
+          "next": "finale_secret_escape",
+          "effects": []
+        },
+        {
+          "text": "Resta — aiuta a fermare il sistema",
+          "next": "finale_secret_stay",
+          "effects": []
+        },
+        {
+          "text": "Distruggi il sistema",
+          "next": "finale_reset",
+          "effects": []
+        }
+      ]
+    },
+    "finale_secret_escape": {
+      "text": "Scappi verso un’uscita che non promette bene — ma promette fine.\n\nIl Dottore resta un’ombra tra le crepe.\n\nFINALE SEGRETO: USCITA FREDA",
+      "choices": [
+        {
+          "text": "Menu",
+          "next": "__menu__",
+          "effects": []
+        }
+      ]
+    },
+    "finale_secret_stay": {
+      "text": "Resti legato all’astrale per spezzare il ciclo dall’interno.\n\nFINALE SEGRETO: ANCORA",
+      "choices": [
+        {
+          "text": "Menu",
+          "next": "__menu__",
+          "effects": []
+        }
+      ]
+    },
+    "finale_reset": {
+      "text": "Rompi tutto. Il piano astrale si spegne: Dottore, corridoi, voci — tutto crolla nei dati.\n\nFINALE 7: RESET — Apri gli occhi nel mondo reale. Troppo reale.",
+      "choices": [
+        {
+          "text": "Menu",
+          "next": "__menu__",
+          "effects": []
+        }
+      ]
+    },
+    "finale_mirei_pact": {
+      "text": "Mirei ti stringe la mano — fredda, vera. “Diventerai un indice vivente,” dice. “Non libero. Ma utile al modo giusto.”\n\nLe biblioteche dell’astrale si aprono come ali di carta.\n\nFINALE: PATTO DI MIREI — Non sei uscito. Sei stato catalogato come salvezza.",
+      "choices": [
+        {
+          "text": "Menu",
+          "next": "__menu__",
+          "effects": []
+        }
+      ]
+    },
+    "finale_kenji_merge": {
+      "text": "Kenji sorride — un pixel alla volta — e poi non c’è più distanza tra la sua voce e la tua.\n\n“Errore consapevole,” dice il Protocollo lontano. “Ma bello.”\n\nFINALE: FUSIONE KENJI — Non sai più dove finisci tu e dove inizia il monitoraggio. Ma non sei solo.",
+      "choices": [
+        {
+          "text": "Menu",
+          "next": "__menu__",
+          "effects": []
+        }
+      ]
+    },
+    "finale_betrayal_echo": {
+      "text": "Hai accusato, odiato, tradito la possibilità stessa di negoziazione.\n\nL’astrale non ti punisce con fuoco: ti lascia coerente con la tua rabbia.\n\nFINALE: ECO DEL TRADIMENTO — Il sistema ti tiene come promemoria di cosa succede quando l’unica lingua è l’attacco.",
+      "choices": [
+        {
+          "text": "Menu",
+          "next": "__menu__",
+          "effects": []
+        }
+      ]
+    },
+    "act5_variant_a_intro": {
+      "text": "ATTO V — VARIANTE A (ABISSO)\n\nNon sei più al tribunale. Sei nel piano astrale profondo: cielo nero, crepe luminose, vuoto sotto.\n\nV.P. (dall’alto): “Il piano astrale non è un luogo. È una gabbia fatta di coscienza.”\n\nMINIGIOCO: FREE FALL — una vita. Raggiungi la soglia.",
+      "choices": [
+        {
+          "text": "Inizia la caduta",
+          "next": "freefall_a",
+          "effects": []
+        }
+      ]
+    },
+    "freefall_a": {
+      "text": "Caduta controllata verso il nucleo. Evita gli ostacoli.",
+      "kind": "freefall",
+      "variant": "a",
+      "next_fail": "finale_freefall_contain"
+    },
+    "finale_freefall_contain": {
+      "text": "La caduta si interrompe. Schermo nero. Ritorno forzato al contenimento.\n\nCONTENIMENTO",
+      "choices": [
+        {
+          "text": "Menu",
+          "next": "__menu__",
+          "effects": []
+        }
+      ]
+    },
+    "finale_astral_prison": {
+      "text": "FINALE 3: ASTRAL PRISON — Il Dottore richiude il sistema. Rimani nel vuoto, cosciente, incapace di uscire.",
+      "choices": [
+        {
+          "text": "Menu",
+          "next": "__menu__",
+          "effects": []
+        }
+      ]
+    },
+    "finale_lost_with_them": {
+      "text": "FINALE 4: LOST WITH THEM — Tu, Evelyn e Artemis restate insieme, ma bloccate nel contenimento. Non siete soli. Siete parte del sistema.",
+      "choices": [
+        {
+          "text": "Menu",
+          "next": "__menu__",
+          "effects": []
+        }
+      ]
+    },
+    "act5_variant_b_intro": {
+      "text": "ATTO V — VARIANTE B (LIBERO)\n\nIl cielo si apre. Ponti invisibili, frammenti verticali.\n\nV.P.: “Pensavi davvero di essere uscito dal mio esperimento?”\n\nMINIGIOCO: FREE FALL — raggiungi il nucleo e forza l’uscita.",
+      "choices": [
+        {
+          "text": "Inizia la discesa",
+          "next": "freefall_b",
+          "effects": []
+        }
+      ]
+    },
+    "freefall_b": {
+      "text": "Discesa verso il nucleo. Ostacoli e correnti.",
+      "kind": "freefall",
+      "variant": "b",
+      "next_fail": "finale_b_repelled"
+    },
+    "finale_b_repelled": {
+      "text": "Il sistema vi respinge. Tornate al punto di partenza.\n\nRESPINTI",
+      "choices": [
+        {
+          "text": "Menu",
+          "next": "__menu__",
+          "effects": []
+        }
+      ]
+    },
+    "finale_escape": {
+      "text": "FINALE 5: FUGGI — Distruggete il collegamento con il Dottore. Vi svegliate nel mondo reale. Trauma, ricordi frammentati — ma vivi.",
+      "choices": [
+        {
+          "text": "Menu",
+          "next": "__menu__",
+          "effects": []
+        }
+      ]
+    },
+    "finale_true_distortion": {
+      "text": "FINALE 6: DISTORSIONE — Esci, ma una parte di te resta nell’astrale. A volte, nei riflessi, rivedi il cielo nero.",
+      "choices": [
+        {
+          "text": "Menu",
+          "next": "__menu__",
+          "effects": []
+        }
+      ]
+    }
+    ,
+    "prequel_start": {
+      "text": "Non è un ricordo intero, ma piccoli estratti: la cucina, la tazza rotta, il turno in fabbrica. Vedi tua sorella che ride mentre cerca di nascondere la tosse.",
+      "choices": [
+        {
+          "text": "Vai al turno in fabbrica",
+          "next": "prequel_work",
+          "effects": []
+        },
+        {
+          "text": "Ritorna al presente",
+          "next": "intro_letter",
+          "effects": []
+        }
+      ]
+    },
+    "prequel_work": {
+      "text": "La fabbrica è calda e rumorosa. Un supervisore urla che sei in ritardo. Ti arrabbi — o trattieni il respiro per non perdere il lavoro.",
+      "choices": [
+        {
+          "text": "Ti ribelli — perdi il lavoro",
+          "next": "prequel_family_end",
+          "effects": [
+            "stubbornness+1",
+            "clue:work_history"
+          ]
+        },
+        {
+          "text": "Tieni la testa bassa — resti per la famiglia",
+          "next": "prequel_family_end",
+          "effects": [
+            "kindness+1",
+            "clue:work_history"
+          ]
+        }
+      ]
+    },
+    "prequel_family_end": {
+      "text": "A casa: un pasto freddo, una promessa che tieni ogni giorno. Sei ancora vivo, ed è già qualcosa.",
+      "choices": [
+        {
+          "text": "Ritorna al presente",
+          "next": "prequel_end",
+          "effects": []
+        }
+      ]
+    },
+    "prequel_end": {
+      "text": "Tornando alla busta, porti con te una nostalgia che non disfa le bollette, ma ti rende più deciso.",
+      "choices": [
+        {
+          "text": "Menu",
+          "next": "intro_letter",
+          "effects": []
+        }
+      ]
+    },
+
+    "kenji_archive_intro": {
+      "text": "Cerchi nei file di Kenji. Monitor spogli, appunti scritti a mano. Forse c'è ancora qualcosa che può spezzare il modello.",
+      "choices": [
+        {
+          "text": "Accedi al terminale di Kenji",
+          "next": "kenji_archive_minigame",
+          "effects": []
+        },
+        {
+          "text": "Torna indietro",
+          "next": "act3_kenji_ok",
+          "effects": []
+        }
+      ]
+    },
+    "kenji_archive_minigame": {
+      "text": "Terminale protetto: sequenza di diagnostica. Ripeti la sequenza correttamente.",
+      "kind": "simon",
+      "rounds": 4,
+      "next_success": "kenji_archive_success",
+      "next_fail": "kenji_archive_fail"
+    },
+    "kenji_archive_success": {
+      "text": "Hai trovato un frammento di codice: un indizio su come il Protocollo etichetta le memorie.",
+      "choices": [
+        {
+          "text": "Continua",
+          "next": "act3_echo_hunt",
+          "effects": [
+            "trust_kenji+1",
+            "clue:kenji_archive",
+            "set:kenji_subplot_done=true"
+          ]
+        }
+      ]
+    },
+    "kenji_archive_fail": {
+      "text": "Il terminale resetta. Qualcuno nota il tuo tentativo. Ti costa fiducia.",
+      "choices": [
+        {
+          "text": "Continua",
+          "next": "act3_echo_hunt",
+          "effects": [
+            "trust_kenji-1"
+          ]
+        }
+      ]
+    },
+
+    "mirei_archive_intro": {
+      "text": "Mirei ti conduce in una piccola ala di scaffali. Ci sono frammenti che non vuole mostrare a tutti.",
+      "choices": [
+        {
+          "text": "Analizza i frammenti",
+          "next": "mirei_archive_minigame",
+          "effects": []
+        },
+        {
+          "text": "Torna alla sala",
+          "next": "act3_kenji_ok",
+          "effects": []
+        }
+      ]
+    },
+    "mirei_archive_minigame": {
+      "text": "Un puzzle di memorie: ripeti la sequenza per ricomporre il file.",
+      "kind": "simon",
+      "rounds": 3,
+      "next_success": "mirei_archive_success",
+      "next_fail": "mirei_archive_fail"
+    },
+    "mirei_archive_success": {
+      "text": "Trovi note che collegano il Protocollo ai monitor esterni. Mirei ti guarda con nuova fiducia.",
+      "choices": [
+        {
+          "text": "Continua",
+          "next": "act3_echo_hunt",
+          "effects": [
+            "trust_mirei+1",
+            "clue:mirei_archive",
+            "set:mirei_archive_done=true"
+          ]
+        }
+      ]
+    },
+    "mirei_archive_fail": {
+      "text": "La sequenza non si completa. Mirei non è sorpresa, ma sei più vulnerabile.",
+      "choices": [
+        {
+          "text": "Continua",
+          "next": "act3_echo_hunt",
+          "effects": [
+            "tension+1"
+          ]
+        }
+      ]
+    },
+
+    "evelyn_arc": {
+      "text": "Parli a lungo con Evelyn. Racconta di debiti, di notti in cui non dorme. La vedrai diversa dopo questa conversazione.",
+      "choices": [
+        {
+          "text": "Restate insieme",
+          "next": "area_distesa_intro",
+          "effects": [
+            "trust_evelyn+1",
+            "set:evelyn_arc_seen=true"
+          ]
+        }
+      ]
+    },
+    "artemis_arc": {
+      "text": "Artemis parla del suo passato da truffatore, e di come ha dovuto imparare a proteggersi. Ti mostra come difendersi in questo piano.",
+      "choices": [
+        {
+          "text": "Proseguite",
+          "next": "area_distesa_intro",
+          "effects": [
+            "trust_artemis+1",
+            "set:artemis_arc_seen=true"
+          ]
+        }
+      ]
+    },
+
+    "hospital_wing": {
+      "text": "Un corridoio di stanze piccole. Un paziente geme. In una cassetta trovi medicinali limitati. Dare aiuto o prendere e scappare?",
+      "choices": [
+        {
+          "text": "Muoviti furtivamente per portare via i medicinali",
+          "next": "hospital_stealth",
+          "effects": []
+        },
+        {
+          "text": "Aiuta il paziente pubblicamente",
+          "next": "hospital_helped_node",
+          "effects": [
+            "trust_mirei+1",
+            "set:hospital_helped=true"
+          ]
+        },
+        {
+          "text": "Prendi le risorse e scappa",
+          "next": "hospital_taken_fail",
+          "effects": [
+            "corruption+1"
+          ]
+        }
+      ]
+    },
+    "hospital_stealth": {
+      "text": "Attraversa il corridoio senza farti notare: evita i rilevatori.",
+      "kind": "stealth",
+      "time_limit": 8.0,
+      "next_success": "hospital_helped_node",
+      "next_fail": "hospital_taken_fail"
+    },
+    "hospital_helped_node": {
+      "text": "Riesci a portare i farmaci senza allarmi e li dai al paziente. Non sembra molto, ma qualcuno ti guarda riconoscente.",
+      "choices": [
+        {
+          "text": "Continua",
+          "next": "custodi_arrival",
+          "effects": [
+            "trust_mirei+1",
+            "set:hospital_helped=true"
+          ]
+        }
+      ]
+    },
+    "hospital_taken_fail": {
+      "text": "Ti scoprono a prendere le scorte. Scappa con qualche cosa, ma ti costa la fiducia e aumenta la corruzione.",
+      "choices": [
+        {
+          "text": "Continua",
+          "next": "custodi_arrival",
+          "effects": [
+            "corruption+1",
+            "tension+1"
+          ]
+        }
+      ]
+    }
+  }
+}
